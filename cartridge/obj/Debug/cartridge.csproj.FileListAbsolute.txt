@@ -1,0 +1,5 @@
+C:\Users\ghost_alex.GLASKO\Documents\Visual Studio 2010\Projects\cartridge\cartridge\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ghost_alex.GLASKO\Documents\Visual Studio 2010\Projects\cartridge\cartridge\bin\cartridge.dll
+C:\Users\ghost_alex.GLASKO\Documents\Visual Studio 2010\Projects\cartridge\cartridge\bin\cartridge.pdb
+C:\Users\ghost_alex.GLASKO\Documents\Visual Studio 2010\Projects\cartridge\cartridge\obj\Debug\cartridge.dll
+C:\Users\ghost_alex.GLASKO\Documents\Visual Studio 2010\Projects\cartridge\cartridge\obj\Debug\cartridge.pdb

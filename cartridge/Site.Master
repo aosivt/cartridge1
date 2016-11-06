@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="cartridge.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Реестр
+                </h1>
+            </div>
+            <div class="loginDisplay">
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="False" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    BackColor="White" DynamicHorizontalOffset="2" Font-Names="Verdana" 
+                    Font-Size="Medium" ForeColor="#009900" StaticSubMenuIndent="20px" 
+                    onmenuitemclick="NavigationMenu_MenuItemClick" BorderColor="#CCFF66">
+                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Домашняя">
+                            <asp:MenuItem NavigateUrl="~/nameCart.aspx" Text="Правка элементов таблици" 
+                                Value="Правка элементов таблици"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/update_re.aspx" 
+                                Text="Правка количество и наименования картриджей" 
+                                Value="Правка количество и наименования картриджей"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/name_sec.aspx" 
+                                Text="Соотношение принтеров и отделов" Value="Соотношение принтеров и отделов">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="О программе"/>
+                    </Items>
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                    <StaticItemTemplate>
+                        <%# Eval("Text") %>
+                    </StaticItemTemplate>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
